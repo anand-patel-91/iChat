@@ -15,6 +15,9 @@ const Input = () => {
   const { data } = useContext(ChatContext);
 
   const handleSend = async () => {
+    if(!img && !text.length){
+      return
+    }
     if (img) {
       const storageRef = ref(storage, uuid());
 
@@ -71,7 +74,7 @@ const Input = () => {
       <input
         type="text"
         placeholder="Type something..."
-        onChange={(e) => setText(e.target.value)}
+        onChange={(e) => setText(e.target.value.trimStart())}
         value={text}
       />
       <div className="send">

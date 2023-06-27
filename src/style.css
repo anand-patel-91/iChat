@@ -5,6 +5,8 @@
 
 .formContainer {
     background-color: rgb(168, 168, 255);
+    background-image: url("./img/doodle.png");
+    background-repeat:space;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -80,6 +82,8 @@
 
 .home{
     background-color: rgb(168, 168, 255);
+    background-image: url("./img/doodle.png");
+    background-repeat:space;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -147,10 +151,12 @@
 }
 
 .searchForm input {
+    height: 20px;
     background-color: transparent;
     border: none;
     color: white;
     outline: none;
+    font-size: 15px;
     &::placeholder {
         color: lightgray;
     }
@@ -195,6 +201,20 @@
     color: lightgray;
 }
 
+.chatUserInfo{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.chatUserInfo img{
+    background-color: #fff;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
 .chatIcons{
     display: flex;
     gap: 10px;
@@ -208,12 +228,12 @@
 .messages{
     background-color: #ddd1f5;
     padding: 10px;
-    height: calc(100% - 160px);
+    height: calc(100% - 140px);
     overflow: scroll;
 }
 
 .input{
-    height: 50px;
+    height: 30px;
     background: white;
     padding: 10px;
     display: flex;

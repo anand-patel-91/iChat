@@ -73,9 +73,7 @@ const Register = () => {
           {loading && "Uploading and compressing the image please wait..."}
           {err && <span>Something went wrong</span>}
         </form>
-        <p>
-          You do have an account? <Link to="/login">Login</Link>
-        </p>
+        <p>Already have an account? <Link to="/login">Login</Link></p>
       </div>
     </div>
   );
